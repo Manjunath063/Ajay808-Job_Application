@@ -11,7 +11,7 @@ const rateLimit = require('express-rate-limit');
 
 // Initialize Express app
 const app = express();
-const port = process.env.PORT || 3221;
+const port = process.env.PORT || 3049;
 
 // Create uploads directory if it doesn't exist
 const uploadsDir = path.join(__dirname, 'Uploads');
@@ -36,14 +36,14 @@ app.use(morgan('dev'));
 
 // CORS configuration
 const allowedOrigins = [
-  'http://54.166.206.245:7771',
-  'http://54.166.206.245:7772',
-  'http://54.166.206.245:7773',
-  'http://54.166.206.245:3221',
-  'http://localhost:7771',
-  'http://localhost:7772',
-  'http://localhost:7773',
-  'http://127.0.0.1:5500'
+  'http://16.16.65.179:7771',
+  'http://16.16.65.179:7772',
+  'http://16.16.65.179:7773',
+  'http://16.16.65.179:3049',
+  'http://16.16.65.179:7771',
+  'http://16.16.65.179:7772',
+  'http://16.16.65.179:7773',
+  'http://127.0.0.1:5500',
 ];
 
 app.use(cors({
