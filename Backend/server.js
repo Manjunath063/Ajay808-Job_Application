@@ -44,6 +44,7 @@ const allowedOrigins = [
   'http://16.16.65.179:7772',
   'http://16.16.65.179:7773',
   'http://127.0.0.1:5500',
+
 ];
 
 app.use(cors({
